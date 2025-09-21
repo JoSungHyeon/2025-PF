@@ -1,0 +1,142 @@
+.skill .sectionInner {
+	max-width: 1200px;
+	padding: 10em 0;
+	margin: 0 auto;
+}
+
+.skill .sectionInner .title {
+	font-family: var(--point-font);
+	display: inline-block;
+}
+
+.skill .sectionInner .title h2 {
+	color: #111;
+	font-size: 3.5em;
+	font-weight: 600;
+	transition: all 0.5s;
+	position: relative;
+	text-shadow:
+	 -1px 0 rgba(226, 226, 224, 0.5),
+	 1px -1px 0 rgba(226, 226, 224, 0.7),
+	 -1px 1px 0 rgba(226, 226, 224, 0.7),
+	 1px 1px 0 rgba(226, 226, 224, 0.7),
+	 5px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.skill .sectionInner .title h2::after {
+	position: absolute;
+	content: "Technology";
+	color: #c9c9c9;
+	bottom: -15px;
+	right: -5em;
+	letter-spacing: 0.5em;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 0.275em;
+}
+
+.skill .skillInfo {
+	width: 100%;
+	margin-top: 4em;
+	display: flex;
+	gap: 1em;
+	flex-direction: column;
+	position: relative;
+}
+
+.skill .skillInfo .skillItem {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-bottom: 1px solid #ccc;
+	padding: 2em 0;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: auto
+}
+
+.skill .skillInfo .skillItem .skillTitle {
+	font-weight: 600;
+	font-size: 1.125em;
+	text-transform: capitalize;
+	color: #fff;
+	transition: color 0.5s;
+	margin-top: 1em;
+	width: 30%;
+}
+
+.skill .skillInfo .skillItem .skillTitle span {
+	font-size: 1em;
+	font-weight: 400;
+	font-family: var(--point-font);
+	margin-right: 20px;
+}
+
+body.dark .skill .skillInfo .skillItem .skillTitle {
+	color: #fff;
+}
+
+.skill .skillInfo .skillItem .skillIcon {
+	position: relative;
+	width: 70%;
+}
+
+.skill .skillInfo .skillItem .skillIcon .iconWrap {
+	display: flex;
+	gap: 40px;
+}
+
+.skill .skillInfo .skillItem .skillIcon .skillDesc {
+	padding-top: 2em;
+}
+
+.skill .skillInfo .skillItem .skillIcon .skillDesc li {
+	line-height: 1.5;
+	font-size: 0.913em;
+	word-break: keep-all;
+	list-style: circle;
+	white-space: wrap;
+	font-weight: 400;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.skill .skillInfo .skillItem .skillIcon img {
+	height: 40px;
+	filter: grayscale(20%);
+	opacity: 0.75;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+	.skill .sectionInner {
+		padding: 10em 20px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.skill .skillInfo .skillItem {
+		flex-wrap: wrap;
+	}
+
+	.skill .skillInfo .skillItem .skillTitle,
+	.skill .skillInfo .skillItem .skillIcon {
+		width: 100%;
+	}
+
+	.skill .skillInfo .skillItem .skillIcon .iconWrap {
+		flex-wrap: wrap;
+	}
+
+	.skill .skillInfo .skillItem {
+		gap: 2em;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.skill .sectionInner .title h2 {
+		font-size: 2.5em;
+	}
+}

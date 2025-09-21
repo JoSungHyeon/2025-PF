@@ -1,0 +1,50 @@
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import Lenis from '@studio-freight/lenis';
+
+import Header from '../components/Header';
+import Start from '../components/Start';
+import Main from '../components/Main';
+import Skill from '../components/Skill';
+import Work from '../components/Work';
+import Opensource from '../components/Opensource';
+import Contact from '../components/Contact';
+
+gsap.registerPlugin(ScrollToPlugin);
+
+function Home() {
+	useEffect(() => {
+		function lenisAnimation(){
+			const lenis=new Lenis({
+				duration: 2,
+				easing: (t) => Math.min(1, 1.001-Math.pow(2, -10*t))
+			});
+		
+			function raf(time){
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
+		
+			requestAnimationFrame(raf);
+		}
+
+		lenisAnimation();
+		
+		gsap.to(window, { scrollTo: 0, duration: 0.3 });
+	});
+	
+  	return (
+  	  	<div id='home'>
+			<Header />
+			<Start /> 
+			<Main />
+			<Skill />
+			<Work />
+			{/* <Opensource /> */}
+			<Contact />
+		</div>
+  	);
+}
+
+export default Home;

@@ -1,0 +1,103 @@
+.contact {
+	background-color: #111;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.contact .sectionInner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.contact .sectionInner .title {
+	font-family: var(--point-font);
+	position: relative;
+	display: block;
+	width: 50%;
+}
+
+.contact .sectionInner .title h2 {
+	font-size: 4em;
+    font-weight: 800;
+    letter-spacing: 2px;
+	text-align: left;
+	color: #111;
+	text-shadow:
+	 -1px 0 rgba(226, 226, 224, 0.5),
+	 1px -1px 0 rgba(226, 226, 224, 0.7),
+	 -1px 1px 0 rgba(226, 226, 224, 0.7),
+	 1px 1px 0 rgba(226, 226, 224, 0.7),
+	 5px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.contact .sectionInner .contactWrap {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.contact .sectionInner .contactWrap .contactItem {
+	color: #fff;
+	text-align: center;
+}
+
+.contact .sectionInner .contactWrap .contactItem .itemImg {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+}
+
+.contact .sectionInner .contactWrap .contactItem .itemImg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+	.contact .sectionInner {
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 640px) {
+	.contact .sectionInner {
+		flex-direction: column;
+		gap: 30px;
+		justify-content: center;
+	}
+
+	.contact .sectionInner .title {
+		width: 100%;
+	}
+
+	.contact .sectionInner .title h2 {
+		text-align: center;
+	}
+
+	.contact .sectionInner .contactWrap {
+		width: 100%;
+	}
+
+	.contact .sectionInner .contactWrap {
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.contact .sectionInner .contactWrap .contactItem {
+		width: 15%;
+	}
+}

@@ -1,0 +1,147 @@
+.work .sectionInner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10em 0;
+}
+
+.work .sectionInner .title h2 {
+	font-family: var(--point-font);
+	display: inline-block;
+	position: relative;
+	font-size: 3.5em;
+	font-weight: 600;
+	color: #111;
+	text-shadow:
+	 -1px 0 rgba(226, 226, 224, 0.5),
+	 1px -1px 0 rgba(226, 226, 224, 0.7),
+	 -1px 1px 0 rgba(226, 226, 224, 0.7),
+	 1px 1px 0 rgba(226, 226, 224, 0.7),
+	 5px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.work .sectionInner .title h2::after {
+    position: absolute;
+    content: "My work";
+    color: #c9c9c9;
+    bottom: -15px;
+    right: -3em;
+    letter-spacing: 0.5em;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.275em;
+}
+
+.work .portWrapper {
+	width: 100%;
+	padding: 2em 0;
+}
+
+.work .portWrapper .portWrap {
+	width: 100%;
+	display: flex;
+	padding: 2em 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+	justify-content: space-between;
+}
+
+.work .portWrapper .portWrap .portNum span {
+	font-size: 1.85em;
+	font-weight: 700;
+	font-family: var(--point-font);
+}
+
+.work .portWrapper .portWrap .portInfo {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.work .portWrapper .portWrap h3,
+.work .portWrapper .portWrap span,
+.work .portWrapper .portWrap p,
+.work .portWrapper .portWrap a {
+	color: #fff;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.work .portWrapper .portWrap p {
+	line-height: 1.8;
+	font-size: 1em;
+	font-weight: 300;
+	word-break: keep-all;
+}
+
+.work .portWrapper .portWrap h3 {
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.work .portWrapper .portWrap .portInfo .portSkill {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.work .portWrapper .portWrap .portInfo .portSkill span {
+	display: inline-block;
+	border-radius: 12px;
+	line-height: 24px;
+	padding: 0 16px;
+	font-size: 0.85em;
+	font-weight: 700;
+	background-color: rgba(65, 143, 222, 0.1)/*  #418FDE */;
+	color: #418FDE;
+}
+
+.work .portWrapper .portWrap .portInfo .portBtn {
+	display: flex;
+	gap: 15px;
+}
+
+.work .portWrapper .portWrap .portInfo .portBtn a {
+	border: 2px solid #fff;
+	display: inline-block;
+	line-height: 40px;
+	border-radius: 40px;
+	transition: all 0.3s;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.work .portWrapper .portWrap .portInfo .portBtn a.view {
+	background-color: #418FDE;
+	color: #111;
+	border: 2px solid #418FDE;
+}
+
+.work .portWrapper .portWrap .portInfo .portBtn a.view:hover {
+	background-color: #fff;
+	border: 2px solid #fff;
+}
+
+.work .portWrapper .portWrap .portInfo .portBtn a.code {
+	background-color: transparent;
+	color: #418FDE;
+	border: 2px solid #418FDE;
+}
+
+.work .portWrapper .portWrap .portInfo .portBtn a.code:hover {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+    .work .sectionInner {
+		padding: 10em 20px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+    .work .sectionInner .title h2 {
+		font-size: 2.5em;
+	}
+}

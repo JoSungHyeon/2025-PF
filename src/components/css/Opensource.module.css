@@ -1,0 +1,160 @@
+.codepen {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.codepen .sectionInner {
+	padding: 10em 0;
+	margin: 0 auto;
+}
+
+.codepen .sectionInner .title {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.codepen .sectionInner h2 {
+    font-family: var(--point-font);
+    display: inline-block;
+    position: relative;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #111;
+    text-shadow: -1px 0 rgba(226, 226, 224, 0.5), 1px -1px 0 rgba(226, 226, 224, 0.7), -1px 1px 0 rgba(226, 226, 224, 0.7), 1px 1px 0 rgba(226, 226, 224, 0.7), 5px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.codepen .sectionInner h2::after {
+    position: absolute;
+    content: "public";
+    color: #c9c9c9;
+    bottom: -15px;
+    right: -3em;
+    letter-spacing: 0.5em;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.275em;
+}
+
+.codepen .sectionInner .sourceWrapper {
+	margin-top: 10em;
+}
+
+.codepen .swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+.codepen .swiperSlide {
+	text-align: center;
+	font-size: 18px;
+	border: 2px solid rgba(255, 255, 255, 0.12);
+	display: flex;
+	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+	border-radius: 4px;
+}
+
+.codepen .swiperSlide .slideInner {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 30px;
+	height: 350px;
+	border-radius: 4px;
+	width: 100%;
+}
+.codepen .swiperSlide .slideInner img {
+	display: block;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.codepen .swiperSlide .slideInner .sourceTitle {
+	text-align: left;
+	color: #fff;
+}
+
+.codepen .swiperSlide .slideInner .sourceSkill {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.codepen .swiperSlide .slideInner .sourceSkill span {
+	display: inline-block;
+    border-radius: 12px;
+    line-height: 22px;
+    font-size: 0.7em;
+    color: #418FDE;
+}
+
+.codepen .swiperSlide .slideInner .sourceDesc ul li {
+	line-height: 1.6;
+	text-align: left;
+	margin-left: 20px;
+	font-size: 0.8em;
+	font-weight: 100;
+	list-style: circle;
+	color: #fff;
+	word-break: keep-all;
+}
+
+.codepen .swiperSlide .slideInner .sourceBtn {
+	display: flex;
+	gap: 10px;
+}
+
+.codepen .swiperSlide .slideInner .sourceBtn a {
+	border: 1px solid #418FDE;
+	display: block;
+	line-height: 22px;
+	border-radius: 30px;
+	transition: all 0.3s;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 0.7em;
+	background-color: transparent;
+	color: #418FDE;
+	cursor: pointer;
+}
+
+.codepen .swiperSlide .slideInner .sourceBtn a.site {
+	background-color: #418FDE;
+    color: #111;
+}
+
+.codepen .swiperSlide .slideInner .sourceBtn a:hover {
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.codepen .swiperSlide .slideInner .sourceBtn a.site:hover {
+	color: #111;
+	background-color: #fff;
+}
+
+.codepen .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+	opacity: 1 !important;
+	background-color: #fff !important;
+}
+
+.codepen .swiper-scrollbar-drag {
+	background-color: #418FDE !important;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 640px) {
+}
