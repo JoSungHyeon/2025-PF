@@ -72,6 +72,38 @@
 	padding-top: 10px;
 }
 
+.scrollBtn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 998;
+  animation: scrollAnim 1.2s infinite;
+}
+
+.scrollBtn span {
+  color: var(--white-color);
+}
+
+@keyframes scrollAnim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* responsive */
 
 @media only screen and (max-width: 1200px) {
