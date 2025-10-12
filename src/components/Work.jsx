@@ -29,7 +29,7 @@ function ProtWrap(props) {
 		<div className={styles.portWrapper}>
 			{
 				work.map((d, i) =>
-					<div key={i} className={styles.portWrap}>
+					<a href={d.siteLink} target='_blank' key={i} className={styles.portWrap}>
 						<div className={styles.portNum}>
 							<span>{d.num}</span>
 						</div>
@@ -48,11 +48,11 @@ function ProtWrap(props) {
 								<p>{d.desc}</p>
 							</div>
 							<div className={styles.portBtn}>
-								<a href={d.siteLink} className={styles.view} target='portfolio'>View Site</a>
-								<a href={d.codeLink} className={styles.code} target='portfolio'>CODE VIEW</a>
+								{/* <a href={d.siteLink} className={styles.view} target='portfolio'>View Site</a> */}
+								{/* <a href={d.codeLink} className={styles.code} target='portfolio'>CODE VIEW</a> */}
 							</div>
 						</div>
-					</div>
+					</a>
 				)
 			}
 		</div>

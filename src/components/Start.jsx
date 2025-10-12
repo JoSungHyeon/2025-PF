@@ -9,8 +9,10 @@ function Start() {
 			<main>
 				<video src={mainVideo} className={styles.mainVideo} muted autoPlay loop playsInline poster='/img/video_poster.png'></video>
 				<div className={styles.mainText}>
-					<h2>SH' <span>PORTFOLIO</span></h2>
-					<p>더 나은 코드를 고민하는 퍼블리셔 & 프론트엔드 개발자</p>
+					<div className={styles.textWrap}>
+						<h2>SH' <span>PORTFOLIO</span></h2>
+						<p>더 나은 코드를 고민하는 퍼블리셔 & 프론트엔드 개발자</p>
+					</div>
 				</div>
 				<div className={styles.scrollBtn}>
 					<span>SCROLL</span>

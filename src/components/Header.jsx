@@ -91,7 +91,6 @@ function Header() {
         });
       });
     });
-
 	}, [])
 
   return (
@@ -99,7 +98,7 @@ function Header() {
 		<div className={styles.inner}>
 			<div className={styles.logo} ref={logoRef}>
 				{/* <h1><Link to={"/"}>&#123; JoSungHyeon &#125;</Link></h1> */}
-				<h1><Link to={"/"}>SH' PORTFOLIO</Link></h1>
+				<h1><a href='https://sh-port-folio.vercel.app/' target='_blank'>SH' PORTFOLIO</a></h1>
 			</div>
 			<nav className={styles.pcMenu}>
         <ul>

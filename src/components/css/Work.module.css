@@ -39,9 +39,15 @@
 .work .portWrapper .portWrap {
 	width: 100%;
 	display: flex;
-	padding: 2em 0;
+	padding: 2em 1em;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.12);
 	justify-content: space-between;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+
+.work .portWrapper .portWrap:hover {
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .work .portWrapper .portWrap .portNum span {
