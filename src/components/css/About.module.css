@@ -70,7 +70,7 @@
 
 .about .sectionInner .valueWrap .valueTxt .valueBox .icon {
 	color: var(--white-color);
-	padding-bottom: 1em;
+	padding-bottom: 0.75em;
 	font-size: 2.5em;
 }
 
@@ -79,6 +79,12 @@
 	font-size: 1.25em;
 	line-height: 1.5;
 	word-break: keep-all;
+}
+
+.about .sectionInner .valueWrap .valueTxt .valueBox .valueDesc strong {
+	display: inline-block;
+	color: var(--point-color);
+	padding-bottom: 0.75em;
 }
 
 /* responsive */
