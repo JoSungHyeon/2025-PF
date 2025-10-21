@@ -1,0 +1,115 @@
+.about .sectionInner {
+	max-width: 1200px;
+	padding: 10em 0;
+	margin: 0 auto;
+}
+
+.about .sectionInner .title {
+	font-family: var(--point-font);
+	display: inline-block;
+}
+
+.about .sectionInner .title h2 {
+	color: #111;
+	font-size: 3.5em;
+	font-weight: 600;
+	transition: all 0.5s;
+	position: relative;
+	text-shadow:
+	 -1px 0 rgba(226, 226, 224, 0.5),
+	 1px -1px 0 rgba(226, 226, 224, 0.7),
+	 -1px 1px 0 rgba(226, 226, 224, 0.7),
+	 1px 1px 0 rgba(226, 226, 224, 0.7),
+	 5px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.about .sectionInner .title h2::after {
+	position: absolute;
+	content: "Values";
+	color: #c9c9c9;
+	bottom: -15px;
+	right: -5em;
+	letter-spacing: 0.5em;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 0.275em;
+}
+
+.about .sectionInner .valueWrap {
+	padding: 2em 0;
+}
+
+.about .sectionInner .valueWrap .aboutTxt {
+	padding: 2em 0;
+	line-height: 1.5;
+	font-size: 1.25em;
+	word-break: keep-all;
+	list-style: circle;
+	white-space: wrap;
+	color: var(--white-color);
+}
+
+.about .sectionInner .valueWrap .aboutTxt h3 {
+	padding-bottom: 1.2em;
+}
+
+.about .sectionInner .valueWrap .aboutTxt p span {
+	color: var(--point-color);
+}
+
+.about .sectionInner .valueWrap .valueTxt {
+	display: flex;
+	gap: 20px;
+}
+
+.about .sectionInner .valueWrap .valueTxt .valueBox {
+	border: 2px solid var(--point-color);
+	border-radius: 12px;
+	padding: 2em;
+}
+
+.about .sectionInner .valueWrap .valueTxt .valueBox .icon {
+	color: var(--white-color);
+	padding-bottom: 1em;
+	font-size: 2.5em;
+}
+
+.about .sectionInner .valueWrap .valueTxt .valueBox .valueDesc {
+	color: var(--white-color);
+	font-size: 1.25em;
+	line-height: 1.5;
+	word-break: keep-all;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+	.about .sectionInner {
+		padding: 10em 20px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.about .sectionInner .valueWrap .aboutTxt {
+		font-size: 1em;
+	}
+
+	.about .sectionInner .valueWrap .valueTxt {
+		flex-direction: column;
+		gap: 2em;
+	}
+	
+	.about .sectionInner .valueWrap .valueTxt .valueBox .icon {
+		font-size: 1.5em;
+	}
+
+	.about .sectionInner .valueWrap .valueTxt .valueBox .valueDesc {
+		font-size: 0.925em;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.about .sectionInner .title h2 {
+		font-size: 2.5em;
+	}
+}

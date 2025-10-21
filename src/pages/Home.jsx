@@ -6,6 +6,7 @@ import Lenis from '@studio-freight/lenis';
 import Header from '../components/Header';
 import Start from '../components/Start';
 import Main from '../components/Main';
+import About from '../components/About';
 import Skill from '../components/Skill';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
@@ -58,6 +59,7 @@ function Home() {
       <Header />
       <Start />
       <Main />
+      <About />
       <Skill />
       <Work />
       <Contact />

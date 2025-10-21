@@ -2,6 +2,7 @@ const homeData = {
 	mainVideo: ["/video/intro2.mp4"],
 	navigation: [
 		{ href: "#start", text: "Intro" },
+		{ href: "#about", text: "About" },
 		{ href: "#skill", text: "Skills" },
 		{ href: "#work", text: "Project" },
 		// { href: "#opensource", text: "Opensource" },
