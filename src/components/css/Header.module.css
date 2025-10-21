@@ -181,7 +181,7 @@ header .mobileMenu .mobileOpen.on div:nth-child(3) {
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
 	header .inner {
 		height: 80px;
 	}
